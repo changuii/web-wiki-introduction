@@ -17,3 +17,24 @@ console.log(
 );
 
 console.log("알맞은 스크립트를 작성하세요");
+
+
+function addComment() {
+    const list = document.getElementsByClassName('comment-list')[0];
+    const input = document.getElementById('comment-input');
+    const inputValue = input.value;
+    let comment = `
+    <li>
+        <div className="comment-item">
+            <div className="comment-author">
+                <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지"/>
+                <span>방문자</span>
+            </div>
+            <div className="comment-content">
+                __inputValue__
+            </div>
+        </div>
+    </li>`
+    comment = comment.replace("__inputValue__", inputValue);
+    list.innerHTML += comment;
+}
