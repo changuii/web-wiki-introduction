@@ -43,3 +43,14 @@
 #comment-input-button{
     background-color: aqua;
 }
+
+
+.gallery-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-container img{
+    width: 100%;
+}
