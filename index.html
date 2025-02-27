@@ -99,7 +99,7 @@
                                        type="text" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다.">
                             </div>
                             <button type="button" style="width: 8%; border: none">취소</button>
-                            <button type="button" style="width: 8%; border: none; background-color: aqua" onclick="addComment()">등록</button>
+                            <button id="comment-input-button" type="button" style="width: 8%; border: none; background-color: aqua"">등록</button>
 
                         </div>
                         <!--                        <textarea-->
@@ -110,7 +110,7 @@
                 </form>
             </div>
             <ul class="comment-list">
-                <li>
+                <li id="comment">
                     <div class="comment-item">
                         <div class="comment-author">
                             <img src="./images/comment-author-icon.png" alt="사용자 프로필 이미지"/>
